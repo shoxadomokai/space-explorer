@@ -481,23 +481,23 @@ span.underline {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: #ffcdd2;
+  background: url(../img/Globe.svg);
+  background-size: cover;
   position: fixed;
   bottom: -7vw;
   right: 5vw;
-  transition: 0.2s background ease-in-out;
   cursor: pointer;
   transition: 0.5s bottom ease;
 }
 
-.goTop:hover {
-  background: url(../img/Globe.svg);
-  background-size: cover;
+.goTop:hover .goTop__image {
+  transform: translateY(-3rem);
 }
 
 .goTop__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: translateY(-2rem);
+  transform: translateY(-1rem);
+  transition: 0.3s transform ease;
 }
