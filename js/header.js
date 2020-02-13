@@ -1,4 +1,6 @@
 let scene, camera, renderer, starGeometry, stars;
+//absolute path to the images folder needed to load the textures
+const imagePath = window.location.protocol + "//" + window.location.host + "/";
 
 function init() {
   //initialise the scene
@@ -35,7 +37,7 @@ function init() {
     star.acceleration = 0.02;
     starGeometry.vertices.push(star);
   }
-  let sprite = new THREE.TextureLoader().load("../img/star.png");
+  let sprite = new THREE.TextureLoader().load(`${imagePath}img/star.png`);
   let starMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
     size: 1,
