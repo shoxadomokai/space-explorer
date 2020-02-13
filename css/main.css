@@ -488,7 +488,7 @@ span.underline {
   background: url(../img/Globe.svg);
   background-size: cover;
   position: fixed;
-  bottom: -7vw;
+  bottom: -5rem;
   right: 5vw;
   cursor: pointer;
   transition: 0.5s bottom ease;

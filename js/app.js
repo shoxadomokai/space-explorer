@@ -43,7 +43,7 @@ const spyScrolling = () => {
   if (scrollPos >= document.body.offsetHeight / 2) {
     goTop.style.bottom = "3vw";
   } else {
-    goTop.style.bottom = "-7vw";
+    goTop.style.bottom = "-5rem";
   }
   for (let section of sections) {
     const id = section.id;
