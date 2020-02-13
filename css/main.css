@@ -87,11 +87,12 @@ section {
   z-index: 999;
   position: fixed;
   padding: 1rem 10vw;
-  width: 100%;
+  width: 100vw;
   left: 0;
   right: 0;
   top: 0;
   transition: 0.2s all ease;
+  overflow: hidden;
 }
 
 .navbar--dark {
@@ -102,13 +103,12 @@ section {
 .navbar__list {
   list-style-type: none;
   display: flex;
-  width: 100%;
   justify-content: center;
   text-transform: uppercase;
 }
 
 .navbar__item {
-  margin: 0 2rem;
+  margin: 0 5vw;
 }
 
 .navbar__link {
@@ -409,8 +409,10 @@ span.underline {
   padding: 20px 10vw;
   color: whitesmoke;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
 }
 
 .logo {
@@ -458,11 +460,13 @@ span.underline {
 .footer__list {
   list-style-type: none;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   text-transform: uppercase;
 }
 
 .footer__item {
-  margin: 0 2rem;
+  margin: 1rem;
 }
 
 .footer__link {

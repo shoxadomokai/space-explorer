@@ -39,15 +39,15 @@ const highLightActive = () => {
 
 //add class 'active' section
 const spyScrolling = () => {
-  const scrollPos = document.scrollingElement.scrollTop + 2;
+  const scrollPos = document.scrollingElement.scrollTop;
   if (scrollPos >= document.body.offsetHeight / 2) {
     goTop.style.bottom = "3vw";
   } else {
     goTop.style.bottom = "-7vw";
   }
   for (let section of sections) {
+    const id = section.id;
     if (section.offsetTop <= scrollPos) {
-      const id = section.id;
       document.querySelector(".active-link").classList.remove("active-link");
       if (!document.querySelector(".active")) {
         sections[0].classList.add("active");

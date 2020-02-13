@@ -1,22 +1,25 @@
-@media only screen and (min-device-width: 682px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@import "main.css";
+@import "medium.css";
+
+@media screen and (min-device-width: 682px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   h1 {
-    font-size: 3.052rem;
+    font-size: 7.594rem;
   }
 
   h2 {
-    font-size: 2.441rem;
+    font-size: 5.063rem;
   }
 
   h3 {
-    font-size: 1.953rem;
+    font-size: 3.375rem;
   }
 
   h4 {
-    font-size: 1.563rem;
+    font-size: 2.25rem;
   }
 
   h5 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   a {
@@ -35,7 +38,6 @@
   }
 
   .grid:nth-of-type(odd) .grid__imagewrapper {
-    grid-column: 2 / 3;
     grid-row-start: 1;
   }
 
@@ -45,11 +47,6 @@
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-  }
-
-  .grid:nth-of-type(odd) .grid__text {
-    grid-column: 1 / 2;
-    grid-row-start: 1;
   }
 
   .grid__title {
@@ -63,5 +60,9 @@
   .flex {
     padding: 120px 15vw;
     background-image: url(../img/section3-bg--large.jpg);
+  }
+
+  .footer {
+    justify-content: space-between;
   }
 }

@@ -67,4 +67,8 @@
     padding: 120px 15vw;
     background-image: url(../img/section3-bg--large.jpg);
   }
+
+  .footer {
+    justify-content: space-between;
+  }
 }
