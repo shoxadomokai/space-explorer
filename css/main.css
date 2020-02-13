@@ -259,28 +259,30 @@ span.underline {
   z-index: 0;
 }
 
-.space-1:after {
+.space-1:after,
+.space-2:after,
+.space-3:after {
   position: absolute;
   content: "";
   width: 95%;
   height: 95%;
-  background: url(../img/space-bg.png);
   background-size: cover;
   left: 0;
   top: 0;
   z-index: 1;
 }
 
+.space-1:after {
+  background: url(../img/space-bg.png);
+}
+
 .space-2:after {
-  position: absolute;
-  content: "";
-  width: 95%;
-  height: 95%;
   background: url(../img/space-bg-2.png);
+}
+
+.space-3:after {
+  background: url(../img/launch-background.png);
   background-size: cover;
-  left: 0;
-  top: 0;
-  z-index: 1;
 }
 
 .grid__imagewrapper:before {
@@ -358,6 +360,16 @@ span.underline {
   }
   100% {
     transform: scale(1.1, 1.1) translate(3rem, -0.5rem);
+  }
+}
+
+.active .pulse {
+  animation: pulse 15s linear 1s infinite alternate;
+}
+
+@keyframes pulse {
+  100% {
+    transform: translate(-1rem, -5rem);
   }
 }
 
