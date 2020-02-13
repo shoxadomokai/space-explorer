@@ -233,6 +233,7 @@ span.underline {
   text-transform: uppercase;
   position: absolute;
   line-height: 0.7;
+  left: 0;
   top: 50%;
   transform: translate(0, -50%);
   writing-mode: vertical-rl;
