@@ -63,6 +63,50 @@
     justify-content: flex-start;
   }
 
+  .active .bounce {
+    animation: bounce 15s linear 2s infinite alternate;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translate(0, 0);
+    }
+    33% {
+      transform: translate(2vw, 2vh);
+    }
+    66% {
+      transform: translate(5vw, -5vh);
+    }
+    100% {
+      transform: translate(-2vw, -10vh);
+    }
+  }
+
+  .active .float {
+    animation-name: float, scale;
+    animation-duration: 10s, 5s;
+    animation-delay: 1s, 14s;
+    animation-timing-function: linear, ease;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes float {
+    100% {
+      transform: translate(5vw, -12vh);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1, 1) translate(5vw, -12vh);
+    }
+    100% {
+      transform: scale(1.1, 1.1) translate(5vw, -12vh);
+    }
+  }
+
   .flex {
     padding: 120px 15vw;
     background-image: url(../img/section3-bg--large.jpg);

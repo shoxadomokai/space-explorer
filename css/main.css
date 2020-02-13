@@ -234,7 +234,6 @@ span.underline {
   position: absolute;
   line-height: 0.7;
   top: 50%;
-  /* left: 50%; */
   transform: translate(0, -50%);
   writing-mode: vertical-rl;
   opacity: 0.05;
@@ -247,7 +246,7 @@ span.underline {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
-  transition: 0.3s all ease;
+  transition: 0.1s all ease;
   overflow: hidden;
 }
 
@@ -330,14 +329,8 @@ span.underline {
   0% {
     transform: translate(0, 0);
   }
-  33% {
-    transform: translate(2vw, 2vh);
-  }
-  66% {
-    transform: translate(5vw, -5vh);
-  }
   100% {
-    transform: translate(-2vw, -10vh);
+    transform: translate(2rem, 2rem);
   }
 }
 
@@ -353,16 +346,16 @@ span.underline {
 
 @keyframes float {
   100% {
-    transform: translate(5vw, -12vh);
+    transform: translate(3rem, -0.5rem);
   }
 }
 
 @keyframes scale {
   0% {
-    transform: scale(1, 1) translate(5vw, -12vh);
+    transform: scale(1, 1) translate(3rem, -0.5rem);
   }
   100% {
-    transform: scale(1.1, 1.1) translate(5vw, -12vh);
+    transform: scale(1.1, 1.1) translate(3rem, -0.5rem);
   }
 }
 

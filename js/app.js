@@ -39,7 +39,7 @@ const highLightActive = () => {
 
 //add class 'active' section
 const spyScrolling = () => {
-  const scrollPos = document.scrollingElement.scrollTop;
+  const scrollPos = document.scrollingElement.scrollTop + 1;
   if (scrollPos >= document.body.offsetHeight / 2) {
     goTop.style.bottom = "3vw";
   } else {
