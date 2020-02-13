@@ -247,12 +247,13 @@ span.underline {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   transition: 0.1s all ease;
+  place-items: center;
   overflow: hidden;
 }
 
 .grid__imagewrapper {
   width: 100%;
-  height: 100%;
+  height: 200px;
   position: relative;
   z-index: 0;
 }
@@ -366,11 +367,7 @@ span.underline {
 
 .grid__title,
 .flex__title {
-  display: flex;
-  height: fit-content;
-  align-items: center;
   padding: 1rem 0;
-  justify-content: center;
 }
 
 .grid__title::before,

@@ -37,6 +37,10 @@
     grid-gap: 5rem;
   }
 
+  .grid__imagewrapper {
+    height: 100%;
+  }
+
   .grid:nth-of-type(odd) .grid__imagewrapper {
     grid-column: 2 / 3;
     grid-row-start: 1;
@@ -44,23 +48,11 @@
 
   .grid__text {
     text-align: left;
-    height: 100%;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
   }
 
   .grid:nth-of-type(odd) .grid__text {
     grid-column: 1 / 2;
     grid-row-start: 1;
-  }
-
-  .grid__title {
-    display: flex;
-    height: fit-content;
-    align-items: center;
-    padding: 1rem 0;
-    justify-content: flex-start;
   }
 
   .active .bounce {

@@ -37,6 +37,10 @@
     grid-gap: 5rem;
   }
 
+  .grid__imagewrapper {
+    height: 100%;
+  }
+
   .grid:nth-of-type(odd) .grid__imagewrapper {
     grid-row-start: 1;
   }
