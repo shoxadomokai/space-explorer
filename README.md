@@ -29,8 +29,9 @@ This is so the animation only runs when the section is in the viewport.
 
 ## Issues
 
-The link corresponding to the first section remains highlighted event when the user is over the header element
+~~The link corresponding to the first section remains highlighted event when the user is over the header element~~
 
 ## To-Do
 
-- [ ] Fix the issue with the first link staying highlighted
+- [x] Fix the issue with the first link staying highlighted
+- [ ] Refactor the loving daylights out of the code
