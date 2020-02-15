@@ -76,10 +76,17 @@ const animateNavbar = () => {
     navbar.style.top = "0";
   }
   prevScrollpos = currentScrollPos;
+  //if the user isn't at the top of the screen and doesn't scroll, hide the navbar after 7 seconds
+  if (prevScrollpos > window.innerHeight) {
+    console.log(prevScrollpos, window.innerHeight);
+    setTimeout(() => {
+      navbar.style.top = `-${navbar.offsetHeight}px`;
+    }, 7000);
+  }
 };
 
 //add smooth scrolling behaviour
-const makeNavLinksSmooth = () => {
+const makeNavLinksSmooth = event => {
   event.preventDefault();
   document.querySelector(event.target.hash).scrollIntoView({
     behavior: "smooth"
