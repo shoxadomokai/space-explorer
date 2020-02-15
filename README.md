@@ -3,6 +3,8 @@
 This is a landing page design that makes use of Javascript to populate the navigation bar and trigger an active state when the user is reading a specific section, created as part of the Udacity course [Javascript and the DOM](https://classroom.udacity.com/nanodegrees/nd0011/parts/68c70b08-c36e-4c48-97af-c84d77ddef5e)
 .
 
+Note: The text (and some imagery) content is stuff taken from the good folks at [Blue Origin](https://www.blueorigin.com/)
+
 ## Getting Started
 
 Nothing fancy here in terms of installation simply clone the repo or make a fork and work your magic.
